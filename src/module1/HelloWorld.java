@@ -76,6 +76,7 @@ public class HelloWorld extends PApplet
 		
 		// TODO: Add code here that creates map2 
 		// Then you'll modify draw() below
+		map2 = new UnfoldingMap(this, 410, 50, 350, 500, provider);
 
 	}
 
@@ -84,6 +85,7 @@ public class HelloWorld extends PApplet
 		// So far we only draw map1...
 		// TODO: Add code so that both maps are displayed
 		map1.draw();
+		map2.draw();
 	}
 
 	
