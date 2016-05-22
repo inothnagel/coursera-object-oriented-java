@@ -1,5 +1,6 @@
 package module1;
 
+import de.fhpotsdam.unfolding.providers.Microsoft;
 import processing.core.PApplet;
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.geo.Location;
@@ -76,7 +77,8 @@ public class HelloWorld extends PApplet
 		
 		// TODO: Add code here that creates map2 
 		// Then you'll modify draw() below
-		map2 = new UnfoldingMap(this, 410, 50, 350, 500, provider);
+        AbstractMapProvider provider2 = new Microsoft.RoadProvider();
+		map2 = new UnfoldingMap(this, 410, 50, 350, 500, provider2);
         map2.zoomAndPanTo(zoomLevel, new Location(-33.92f, 18.42f));
 
 	}
